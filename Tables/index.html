@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 50;
+        padding: 0;
+    }
+    table{
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    tbody td{
+        text-align: center;
+        background-color: thistle;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    th{
+        background-color: pink;
+        border: 1px solid black;
+        padding: 30px;
+    }
+    tfoot{
+        background-color: rgb(255, 132, 0);
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <th> First Name</th>
+                <th> Last Name</th>
+                <th> Age</th>
+            </tr>
+            <tr>
+                <td>Mahima</td>
+                <td>Shinde</td>
+                <td rowspan = "2">19</td>
+            </tr>
+            <tr>
+                <td>Saras</td>
+                <td>Shinde</td>
+            </tr>
+            <tr>
+                <td>Prathamesh</td>
+                <td>Patil</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan = "3">This is a Footer</td>
+            </tr>
+        </tfoot>
+        <caption> My Table</caption>
+    </table>
+    
+</body>
+</html>
