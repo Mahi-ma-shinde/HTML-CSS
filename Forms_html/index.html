@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "./submituserdata" method = "post" target="_blank" id = "myform" enctype="multipart/form-data">
+        <input type = "text" name = "email" placeholder = "Enter Email">
+        <input type = "password" name = "pwd" placeholder = "Enter Password">
+        <input type = "submit" name = "Submit" value="Login" onclick="alert('Details Submitted')">
+        <br><br>
+        <label>What is your age?</label>
+        <select name = "userage">
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+        </select>
+        <textarea name = "message" rows = "10" cols="20" style = "width: 100px; height:100px; max-width:150px; max-height: 300px;"></textarea>
+        <button type = "button" onclick = "alert('Hey there')"> Don't Click</button>
+        <br><br>
+        <fieldset>
+            <legend> Login </legend>
+            <input type = "text" name = "email" placeholder = "Enter Email" list = "myname" required>
+            <datalist id = "myname">
+                <option value = "name1">
+                <option value = "name2">
+                <option value = "name3">
+                
+            </datalist>
+            <input type = "password" name = "pwd" placeholder = "Enter Password" required>
+            
+            <input type = "submit" name = "Submit" value="Login" onclick="alert('Details Submitted')" formaction="/someotherpath" formenctype="multipart/form-data">
+        </fieldset>
+    </form>
+</body>
+</html>
