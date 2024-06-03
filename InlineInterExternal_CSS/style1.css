@@ -1,0 +1,25 @@
+/* 
+    External CSS
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color:red
+}
+
+p{
+    color:blue
+}
+
+.myhead{
+    color:red;
+    margin: 10px;
+}
+
+.mythird,.myptag{
+    background-color: aqua;
+}
