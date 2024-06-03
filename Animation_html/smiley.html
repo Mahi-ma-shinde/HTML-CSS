@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(0, 0, 0);
+        color: thistle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    canvas{
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        height: 80%;
+    }
+</style>
+<body>
+    <canvas id = "canvas" width = "80" height = "500"></canvas>
+</body>
+<script>
+    const canvas = document.getElementById('canvas')
+    const ctx = canvas.getContext('2d')
+    canvas.width = window.innerWidth-100;
+    
+    //Yello circle
+    ctx.beginPath();
+    ctx.arc(430, 250, 200, 0, Math.PI*2);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.strokeStyle = "black";
+    ctx.stroke();
+
+    //Right eye
+    ctx.beginPath()
+    ctx.arc(500, 180, 30, 0, Math.PI*2);
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    //left eye
+    ctx.beginPath()
+    ctx.arc(360, 180, 30, 0, Math.PI*2);
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    //mouth
+    ctx.beginPath()
+    ctx.arc(430, 300, 100, 0, Math.PI);
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    //teeth
+    ctx.beginPath()
+    ctx.moveTo(370, 301);
+    ctx.lineTo(400,301);
+    ctx.lineTo(400,320);
+    ctx.lineTo(370,320);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.stroke();
+
+    //teeth
+    ctx.beginPath()
+    ctx.moveTo(410, 301);
+    ctx.lineTo(440,301);
+    ctx.lineTo(440,320);
+    ctx.lineTo(410,320);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.stroke();
+    //teeth
+    ctx.beginPath()
+    ctx.moveTo(450, 301);
+    ctx.lineTo(480,301);
+    ctx.lineTo(480,320);
+    ctx.lineTo(450,320);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.stroke();
+
+</script>
+</html>
