@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "file" id = "fileInput" onchange= "displayFileData()">
+    <div id = "output"></div>
+
+</body>
+<script>
+    function displayFileData(){
+        var fileInput = document.getElementById("fileInput");
+        // console(fileInput.files[0])
+        var filedata = fileInput.files[0]
+        var output = document.getElementById("output")
+        output.innerHTML = 
+        "File Name: "+filedata.name+"<br>"+
+        "File type: "+filedata.type+"<br>"+
+        "File size: "+filedata.size+"<br>"
+    }
+</script>
+</html>
