@@ -1,0 +1,43 @@
+// All variables are in _var.sass file. It is compulsory to start it with underscore
+
+@import var
+@import mixin
+
+*
+    margin: 0
+    padding: 0
+
+h1
+    color: $color1
+    &:hover
+        color: blue
+
+    @media (max-width: 1200px) 
+        color: green
+
+    @media (max-width: 600px) 
+        color: red
+
+.operatorsass
+    font-size: 40px+ 30px
+
+.varsass
+    color: $color1
+    font-family: $font1
+    font-size: 50px
+
+.nestingouter
+    background-color: black
+    a
+        color: yellow
+        font-size: 30px
+
+    .nestinginnerp
+        @include myprop1
+
+    &::after
+        content: " "
+        display: block
+        width: 100px
+        height: 100px
+        background-color: thistle
