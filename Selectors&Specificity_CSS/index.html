@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* p::first-letter{
+        color: red;
+        font-size: 50px;
+    } */
+    .head1{
+        color: green;
+    }
+    .head1::before{
+        content: '"';
+        color: red;
+        font-size: 50px;
+        position: absolute;
+    }
+    .head1::after{
+        content: '"';
+        color: yellow;
+        font-size: 50px;
+        position: absolute;
+    }
+    .head2{
+        color: blue;
+    }
+    input[type = "password"]:hover{
+        background-color: thistle;
+    }
+    input[type = "text"]:focus{
+        background-color: thistle;
+    }
+    div p{
+        color: red;
+    }
+    .pclass{
+        color: blue;
+    }
+    #pid{
+        /* if class and id on same element then id will be given priority */
+        color: brown;
+    }
+</style>
+<body>
+    <div>
+        <p> This is a PG</p>
+        <h1 class = "head1">THis is a heading  </h1>
+        <h2 class = "head2">This is a Heading2 </h2>
+        <input type = "text" placeholder="Enter your name">
+        <input type = "password" placeholder="Enter your Password">
+    </div>
+    <div>
+        <p>Paragraph is inside div</p>
+    </div>
+    <p class = "pclass" id = "pid">Paragraph is outside div</p>
+</body>
+</html>
