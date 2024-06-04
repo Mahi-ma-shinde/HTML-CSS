@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hoverbut{
+        background-color: blueviolet;
+        color: white;
+        padding: 10px 20px;
+        border: 1px solid black;
+        font-size: 13px;
+    }
+    .tformbut{
+        background-color: rgb(43, 177, 226);
+        color: white;
+        padding: 10px 20px;
+        border: 1px solid black;
+        font-size: 13px;
+    }
+    .hoverbut:hover{
+        background-color: red;
+        /* transition: background-color 1.5s ease-in-out, font-size 3s ease-in-out; */
+        transition: all 3s ease-in-out;
+        font-size: 20px;
+    }
+    .tformbut:hover{
+        background-color: red;
+        /* transition: background-color 1.5s ease-in-out, font-size 3s ease-in-out; */
+        transition: all 2s ease-in-out;
+        scale: 1.5;
+        transform: translate(50px, 30px);
+        rotate: 45deg;
+        
+    }
+</style>
+<body>
+    <button class = "hoverbut">Transition Property</button>
+    <br><br>
+    <button class = "tformbut">Transforn Property</button>
+</body>
+</html>
